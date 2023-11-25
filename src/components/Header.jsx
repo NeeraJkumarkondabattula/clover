@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Header = () => {
   return (
-    <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+    <Link to="/clover" style={{ color: "white", textDecoration: "none" }}>
       <Container>
         <img
           src="https://cdn-icons.flaticon.com/svg/10506/10506852.svg?token=exp=1700555382~hmac=06338da97a44498e1b51ce772a333261"

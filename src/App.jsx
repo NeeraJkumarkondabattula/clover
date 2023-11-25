@@ -16,7 +16,8 @@ function App() {
       <Header />
       <Routes>
         <Route
-          path="/"
+          exact
+          path="/clover"
           element={currentUser ? <HomePage /> : <Navigate to="/auth/signin" />}>
           {" "}
         </Route>
