@@ -15,12 +15,12 @@ function App() {
     <Container>
       <Header />
       <Routes>
-        <Route path="/:username" element={<UserPage />} />
         <Route
-          exact
-          path="/clover"
-          element={currentUser ? <HomePage /> : <Navigate to="/auth/signin" />}
-        />
+          path="/"
+          element={currentUser ? <HomePage /> : <Navigate to="/auth/signin" />}>
+          {" "}
+        </Route>
+        <Route path="/:username" element={<UserPage />} />
         <Route
           path="/update/:id"
           element={
