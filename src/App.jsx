@@ -17,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/:username" element={<UserPage />} />
         <Route
-          path="/"
+          exact
+          path="/clover"
           element={currentUser ? <HomePage /> : <Navigate to="/auth/signin" />}
         />
         <Route
