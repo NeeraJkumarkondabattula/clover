@@ -14,9 +14,9 @@ const HomePage = () => {
   useEffect(() => {
     async function Fetch() {
       setIsLoading(true);
-      await axios
-        .get("/api/posts/feed")
-        .then((res) => setPosts(res.data.feedPosts));
+      await axios.get("/api/posts/feed").then((res) => {
+        setPosts(res.data.feedPosts);
+      });
     }
     Fetch();
     setIsLoading(false);
